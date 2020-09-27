@@ -1,0 +1,79 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hkohli.orthodox.SearchFragment"
+    android:background="@drawable/loginback">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        >
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            xmlns:card_view ="http://schemas.android.com/apk/res-auto"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardElevation="0dp"
+            card_view:cardBackgroundColor="#80FFFFFF"
+            card_view:cardCornerRadius="28dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_margin="20dp"
+                >
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/search_spinner_course"
+                    />
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/search_spinner_branch"
+                    />
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/search_spinner_year"
+                    />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/search_cardview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+
+            xmlns:card_view ="http://schemas.android.com/apk/res-auto"
+            card_view:cardElevation="0dp"
+            card_view:cardBackgroundColor="#80FFFFFF"
+            card_view:cardCornerRadius="28dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SEARCH"
+                android:textSize="30dp"
+                android:layout_margin="20dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                />
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,62 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hkohli.orthodox.StudentInserter">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Student Inserter"
+            android:textColor="@android:color/holo_orange_dark"
+            android:gravity="center_horizontal"
+            android:textSize="30dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:hint="ROLL NO"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textSize="20dp"
+            android:id="@+id/student_insert_roll"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:hint="PASSWORD"
+            android:textSize="20dp"
+            android:id="@+id/student_insert_password"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="ADD USER "
+            android:textColor="@color/colorAccent"
+            android:textSize="25dp"
+            android:background="#80ffff00"
+            android:id="@+id/student_insert_button"
+            />
+
+
+    </LinearLayout>
+</FrameLayout>

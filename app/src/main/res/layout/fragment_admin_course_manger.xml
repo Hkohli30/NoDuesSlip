@@ -1,0 +1,175 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.hkohli.orthodox.AdminCourseManger"
+    android:background="@drawable/loginback"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        >
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/admin_course_manager"
+            xmlns:card_view ="http://schemas.android.com/apk/res-auto"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardElevation="0dp"
+            card_view:cardBackgroundColor="#80FFFFFF"
+            card_view:cardCornerRadius="28dp"
+            android:clickable="false"
+            android:foreground="?android:attr/selectableItemBackground"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp"
+                >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="COURSE NAME"
+                    android:id="@+id/admin_course_edit"
+                    android:textColor="@android:color/background_dark"
+                    />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="7dp"
+                >
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="MAX SEMESTERS IN COURSE"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:layout_weight="1"
+                    android:id="@+id/admin_course_duration_edit"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@android:color/background_dark"
+                    />
+                <android.support.design.widget.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/admin_course_fabs"
+                    android:src="@android:drawable/ic_input_add"
+                    app:backgroundTint="#80FFFFFF"
+                    />
+
+            </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            xmlns:card_view ="http://schemas.android.com/apk/res-auto"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardElevation="0dp"
+            card_view:cardBackgroundColor="#80FFFFFF"
+            card_view:cardCornerRadius="28dp"
+            android:clickable="false"
+            android:foreground="?android:attr/selectableItemBackground"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="15dp"
+                >
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="BATCH"
+                    android:layout_weight="1"
+                    android:id="@+id/admin_batch_edit"
+                    android:textColor="@android:color/background_dark"
+                    />
+                <android.support.design.widget.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/admin_batch_fabs"
+                    android:src="@android:drawable/ic_input_add"
+                    app:backgroundTint="#80FFFFFF"
+                    />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            xmlns:card_view ="http://schemas.android.com/apk/res-auto"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardElevation="0dp"
+            card_view:cardBackgroundColor="#80FFFFFF"
+            card_view:cardCornerRadius="28dp"
+            android:clickable="false"
+            android:foreground="?android:attr/selectableItemBackground"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="7dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                >
+                <Spinner
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:id="@+id/admin_course_select_spinner"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="15dp"
+                    >
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="BRANCH NAME"
+                        android:layout_weight="1"
+                        android:id="@+id/admin_course_manager_branch_name"
+                        android:textColor="@android:color/background_dark"
+                        />
+                    <android.support.design.widget.FloatingActionButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/admin_branch_fabs"
+                        android:src="@android:drawable/ic_input_add"
+                        app:backgroundTint="#80FFFFFF"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+
+
+
+    </LinearLayout>
+</FrameLayout>

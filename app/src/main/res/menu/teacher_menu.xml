@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@id/admin_menu_add_student"
+        android:icon="@drawable/ic_menu_send"
+        android:title="Add Students"
+        />
+    <group android:checkableBehavior="single">
+        <item android:title="View Students" >
+            <menu>
+                <item
+                    android:id="@+id/admin_menu_search1"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="Search By Name/RollNo" />
+
+                <item
+                    android:id="@+id/admin_menu_search2"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="Search By Department" />
+            </menu>
+        </item>
+    </group>
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/admin_menu_message"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Message" />
+        </menu>
+    </item>
+
+</menu>
